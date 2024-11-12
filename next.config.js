@@ -1,6 +1,9 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
+  images: {
+    unoptimized: true, // 이미지 최적화 비활성화
+  },
   webpack: (config) => {
     config.module.rules.push({
       test: /\.md/,
