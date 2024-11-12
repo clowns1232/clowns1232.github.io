@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "standalone",
-  distDir: "out", // 빌드 파일을 `out` 디렉터리에 저장
+  output: "export",
   webpack: (config) => {
     config.module.rules.push({
       test: /\.md/,
