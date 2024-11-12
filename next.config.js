@@ -1,7 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  reactStrictMode: true,
+  output: "standalone",
   webpack: (config) => {
     config.module.rules.push({
       test: /\.md/,
